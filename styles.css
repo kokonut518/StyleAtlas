@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -18,8 +20,14 @@ header {
 }
 
 .logo {
-    max-width: 150px;
+    max-width: 180px;
     height: auto;
+}
+
+header nav ul li a { /* Targeting the header navigation links */
+    font-family: 'Playfair Display', serif !important; /* Apply the elegant font */
+    font-weight: 300 !important; /* Ensure the font is bold */
+    text-transform: none !important; /* Remove any text transformation */
 }
 
 nav ul {
@@ -29,7 +37,12 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 100px;
+}
+
+
+nav ul li:last-child {
+    margin-right: 0; /* Remove the margin for the last item */
 }
 
 nav ul li a {
@@ -54,6 +67,14 @@ main {
     margin-top: 0;
 }
 
+#upload h2,
+#search h2,
+#results h2,
+#world-photos h2 {
+    font-family: 'Playfair Display', serif; /* Apply the elegant font */
+    font-weight: 700; /* Bold for more elegance */
+}
+
 #upload-form {
     display: flex;
     flex-direction: column;
@@ -71,6 +92,8 @@ main {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    font-family: 'Playfair Display', serif !important; /* Apply the elegant font */
+    font-weight: 300 !important; /* Ensure boldness is applied */
 }
 
 #upload-button:hover {
@@ -143,8 +166,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
     height: 10px; /* Set a fixed height, adjust as needed */
     width: 100%;
 
@@ -157,16 +178,20 @@ footer {
 /* Add this to set a taller height for the "Enter country" input */
 #country {
     height: 20px; /* Adjust the value to your desired height */
-    font-size: 16px; /* Optional: increase font size to match the larger box */
+    font-size: 14px; /* Optional: increase font size to match the larger box */
     width: 97%; /* Make it span the same width as the "Enter country name" box */
     padding: 10px; /* Optional: increase padding to make the input box more comfortable to use */
+    font-family: 'Playfair Display', serif !important; /* Apply the elegant font */
+    font-weight: 300 !important; /* Ensure boldness is applied */
 }
 
 #search-country {
     height: 20px; /* Adjust the value to your desired height */
-    font-size: 16px; /* Optional: increase font size to match the larger box */
+    font-size: 14px; /* Optional: increase font size to match the larger box */
     width: 97%; /* Make it span the same width as the "Enter country name" box */
     padding: 10px; /* Optional: increase padding to make the input box more comfortable to use */
+    font-family: 'Playfair Display', serif !important; /* Apply the elegant font */
+    font-weight: 300 !important; /* Ensure boldness is applied */
 }
 
 #search-button {
@@ -178,6 +203,8 @@ footer {
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s;
+    font-family: 'Playfair Display', serif !important; /* Apply the elegant font */
+    font-weight: 300 !important; /* Ensure boldness is applied */
 }
 
 /* new stuff for display */

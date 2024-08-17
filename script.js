@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('photo-scroll-row2'),
         document.getElementById('photo-scroll-row3')
     ];
-    const photoCount = 10; // number of unique photos to display
+    const photoCount = 26; // number of unique photos to display
     const uploadForm = document.getElementById('upload-form');
     const searchButton = document.getElementById('search-button');
     const photoGrid = document.getElementById('photo-grid');
@@ -21,7 +21,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function getRandomPhotoUrl() {
         const photos = ['images/london.jpg', 'images/barcelona.jpeg', 'images/seoul.jpeg', 'images/sydney.jpg', 'images/copenhagen.jpg',
-                        'images/vancouver.jpg', 'images/losangeles.jpg', 'images/shanghai.jpg', 'images/florida.jpg', 'images/rome.jpg', 'images/madrid.jpg'];
+                        'images/vancouver.jpg', 'images/losangeles.jpg', 'images/shanghai.jpg', 'images/florida.jpg', 'images/rome.jpg', 
+                        'images/madrid.jpg', 'images/newyork.jpg', 'images/santorini.jpg', 'images/zurich.jpg', 'images/paris.jpg', 
+                        'images/boston.jpg', 'images/texas.jpg', 'images/hamptons.jpg', 'images/sandiego.jpg', 'images/florence.jpg', 
+                        'images/busan.jpg', 'images/ibiza.jpg', 'images/seattle.jpg', 'images/utah.jpg', 'images/kyoto.jpg', 'images/shenzhen.jpg', 
+                        'images/positano.jpg'];
         return photos[Math.floor(Math.random() * photos.length)];
     }
 
