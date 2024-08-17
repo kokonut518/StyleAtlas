@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000; /* Changed from #333 to #000 for black */
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 1rem;
+}
+
+.logo {
+    max-width: 200px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+input, button {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #000; /* Changed from #333 to #000 to match header */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #333; /* Changed hover color to dark gray */
+}
+
+#photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.photo-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.photo-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #000; /* Changed from #333 to #000 to match header */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* new stuff for display */
+#photo-scroll-container {
+    width: 100%;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.photo-scroll-row {
+    display: flex;
+    animation: scroll 60s linear infinite;
+    margin-bottom: 10px;
+}
+
+.photo-scroll-row:nth-child(2) {
+    animation-duration: 80s;
+}
+
+.photo-scroll-row:nth-child(3) {
+    animation-duration: 70s;
+}
+
+.scroll-photo-item {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.scroll-photo-item img {
+    height: 100%;
+    width: auto;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
