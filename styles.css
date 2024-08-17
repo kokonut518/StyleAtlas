@@ -9,7 +9,7 @@ body {
 header {
     background-color: #000; /* Changed from #333 to #000 for black */
     color: #fff;
-    padding: 1rem;
+    padding: 0.001rem;
     text-align: center;
 }
 
@@ -18,7 +18,7 @@ header {
 }
 
 .logo {
-    max-width: 200px;
+    max-width: 150px;
     height: auto;
 }
 
@@ -43,19 +43,66 @@ main {
     margin: 0 auto;
 }
 
-form {
-    background-color: #fff;
+#upload {
+    background-color: #f0f0f0; /* Light grey background */
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 10px; /* Rounded corners */
     margin-bottom: 20px;
 }
 
-input, button {
-    margin: 10px 0;
+#upload h2 {
+    margin-top: 0;
+}
+
+#upload-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#country {
+    margin-bottom: 10px;
+}
+
+#upload-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
     padding: 10px;
-    width: 100%;
-    box-sizing: border-box;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#upload-button:hover {
+    background-color: #333;
+}
+
+form {
+    background-color: transparent;
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+/* Apply similar styles to the "Search Photos by Country" section */
+#search {
+    background-color: #f0f0f0; /* Same light grey background */
+    padding: 20px;
+    border-radius: 10px; /* Same rounded corners */
+    margin-bottom: 20px;
+}
+
+#search-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#search-country {
+    margin-bottom: 10px; /* Add some space below the input field */
+}
+
+input, button {
+    border-radius: 5px; /* Rounded corners for inputs and buttons */
 }
 
 button {
@@ -98,7 +145,39 @@ footer {
     padding: 1rem;
     position: fixed;
     bottom: 0;
+    height: 10px; /* Set a fixed height, adjust as needed */
     width: 100%;
+
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* new stuff for aesthetics */
+/* Add this to set a taller height for the "Enter country" input */
+#country {
+    height: 20px; /* Adjust the value to your desired height */
+    font-size: 16px; /* Optional: increase font size to match the larger box */
+    width: 97%; /* Make it span the same width as the "Enter country name" box */
+    padding: 10px; /* Optional: increase padding to make the input box more comfortable to use */
+}
+
+#search-country {
+    height: 20px; /* Adjust the value to your desired height */
+    font-size: 16px; /* Optional: increase font size to match the larger box */
+    width: 97%; /* Make it span the same width as the "Enter country name" box */
+    padding: 10px; /* Optional: increase padding to make the input box more comfortable to use */
+}
+
+#search-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
 }
 
 /* new stuff for display */

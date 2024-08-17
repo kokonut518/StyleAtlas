@@ -8,6 +8,16 @@ document.addEventListener('DOMContentLoaded', function() {
     const uploadForm = document.getElementById('upload-form');
     const searchButton = document.getElementById('search-button');
     const photoGrid = document.getElementById('photo-grid');
+    
+    document.getElementById('upload-button').addEventListener('click', function() {
+        document.getElementById('photo-file').click();
+    });
+    
+    document.getElementById('photo-file').addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            document.getElementById('upload-form').dispatchEvent(new Event('submit'));
+        }
+    });
 
     function getRandomPhotoUrl() {
         const photos = ['images/london.jpg', 'images/barcelona.jpeg', 'images/seoul.jpeg', 'images/sydney.jpg', 'images/copenhagen.jpg',
