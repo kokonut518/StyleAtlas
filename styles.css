@@ -248,3 +248,11 @@ footer {
         transform: translateX(-100%);
     }
 }
+
+.section {
+    display: none;
+}
+
+#world-photos {
+    display: block;
+}

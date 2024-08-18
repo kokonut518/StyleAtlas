@@ -220,4 +220,10 @@ html, body {
     overflow: hidden;
 }
 
+.section {
+    display: none;
+}
 
+#world-photos {
+    display: block;
+}
