@@ -1,5 +1,21 @@
 {
+  "name": "my-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "lint": "next lint",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "some-server-command"
+  },
+  "workspaces": [
+    "style-atlas-backend",
+    "globe"
+  ],
   "dependencies": {
     "mongodb": "^6.8.0"
+  },
+  "devDependencies": {
+    "next": "^12.0.0"
   }
 }
+
